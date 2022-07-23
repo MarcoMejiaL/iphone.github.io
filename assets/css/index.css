@@ -1,0 +1,47 @@
+/* links */
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;600;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap');
+
+
+
+/* pages */
+@import url(./csspages/nav.css);
+@import url(./csspages/hero.css);
+@import url(./csspages/gallery.css);
+@import url(./csspages/content.css);
+@import url(./csspages/cameras.css);
+@import url(./csspages/information.css);
+
+/* variables de colores */
+:root{
+    --baseBlack : #000;
+    --black:#111;
+    --lightBlack: #333;
+    --baseWhite: #fff;
+    --buttonBlue:#0071e3;
+    --baseGrey: #aaa;
+
+}
+body{
+    line-height: 1.333;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inactive{
+    display: none;
+}

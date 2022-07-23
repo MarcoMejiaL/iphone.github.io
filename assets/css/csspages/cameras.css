@@ -1,0 +1,91 @@
+.cameras{
+    position: relative;
+    z-index: 1;
+    margin-top: -100vh;
+    background-color: var(--baseBlack);
+}
+.camera__hero{
+    position: relative;
+    z-index: 1;
+    height: 200vh;
+    background-color: var(--baseBlack);
+}
+.container__camera{
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.camera__container{
+    position:absolute;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom:  auto;
+    width: 100%;
+    min-height: 300vh;
+}
+.camera__stiky{
+    position: sticky;
+    top: 0px;
+}
+.camera__hiden{
+    overflow: hidden;
+   
+}
+.camera__content{
+    
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    min-height: 78vh;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(../../img/camara.jpeg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+    
+
+}
+ .contentofcontent{
+    flex: 0 83.3333%;
+   
+    
+    
+} 
+.camera__title{
+    color: var(--baseWhite);
+    font-size: 10rem;
+    
+    
+}
+.camera__parrafo{
+    
+    color: white;
+    font-size: 7rem;
+}
+
+/* pruebas */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @media (max-width:991px) {
+    .camera__title{
+        font-size: 4rem;
+    }
+    .camera__parrafo{
+        font-size: 2rem;
+    }
+  }

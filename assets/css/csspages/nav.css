@@ -1,0 +1,154 @@
+/* desktop secction */
+
+.nav-desktop{
+    
+    position: relative;
+    width: 100%;
+    padding: 4px;
+    height: auto;
+    background-color: var(--baseBlack);
+    z-index: 9999;
+    
+
+
+}
+.nav__container--desktop{
+    
+    width: 75%;
+    margin: 0 auto;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: auto;
+    
+}
+.menu__anchor--desktop{
+    
+    color: var(--baseWhite);
+    text-decoration: none;
+    font-size: 1.4rem;
+    background-color: transparent;
+
+
+}
+/* mobile */
+
+.nav__container--mobile{
+    
+    margin: 0 auto;
+    padding: 4px;
+    display: none;
+    
+    align-items: center;
+    
+    
+    height: auto;
+    
+    
+}
+.menu__anchor--mobile{
+    
+    color: var(--baseWhite);
+    text-decoration: none;
+    font-size: 1.4rem;
+    background-color: transparent;
+
+
+}
+
+
+
+.menu__anchor--desktop:hover{
+    color: rgba(140, 140, 140, 0.914);
+    transition: all 0.4s;
+}
+
+.cosito__pegado--desktop{
+    background-color: var(--black);
+    padding: 4px;
+    width: 100%;
+    position: sticky;
+    display: inline-block;
+    top: 0 ; 
+    z-index: 9999;
+    
+}
+.cosito__contaier{
+    background-color: var(--baseBlack);     
+    
+    display: flex;  
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-direction: row;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.titulo__container{
+    
+    
+    width: 200px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.titulo__container a{
+    color: var(--baseWhite);
+    text-decoration: none;
+    font-size: 2.0rem;
+}
+.buy__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buy__container a {
+    color: white;
+    font-size: 1.4rem;   
+    text-decoration: none;
+    
+}
+
+.buy__container input{
+    background-color: var(--buttonBlue);
+    color: var(--baseWhite);
+    padding: 4px 11px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    width: 50px;
+}
+.buy__container input:hover{
+    cursor: pointer;
+    background-color: #0071e3b4;
+    transition: all 0.2s;
+}
+.buy__container a:first-child{
+    color: #ccc;
+}
+
+
+/* .nav__container--desktop */
+ 
+    
+/* @medias */
+
+ @media screen and (max-width: 515px){
+    .nav__container--desktop, .menu__anchor--desktop{
+        display: none;
+    }
+    .nav__container--mobile {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .overview{
+        display: none;
+    }
+   
+} 

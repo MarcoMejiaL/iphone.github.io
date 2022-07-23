@@ -1,0 +1,63 @@
+.section__content--desktop{
+    position: relative;
+    z-index: 2;
+    margin-top: -100vh;
+    
+}
+
+.section__container--desktop{
+    height: 200vh;
+}
+.section__container--stiky{
+    position: sticky;
+    top:0px;
+    display: block;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.stiky__grid--container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.75fr 1fr;
+    height: 100vh;
+    z-index: 100;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 16px;
+    background-color: var(--black);
+}
+.stikytitle{
+    color: var(--baseWhite);
+    font-size: 7.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.stikyparagraf{
+    color: var(--lightBlack);
+    font-size: 3.4rem;
+    text-align: center;
+}
+.stiky__img{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url(../../img/canarita.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    object-fit: cover;
+}
+
+
+@media (max-width:991px) {
+    .stikytitle{
+        font-size: 4rem;
+    }
+    .stikyparagraf{
+        font-size: 2rem;
+    }
+}
